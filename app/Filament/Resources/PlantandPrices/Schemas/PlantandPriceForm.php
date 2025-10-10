@@ -2,11 +2,13 @@
 
 namespace App\Filament\Resources\PlantandPrices\Schemas;
 
+use App\Filament\Resources\PlantandPrices\PlantandPriceResource;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Schema;
 
 class PlantandPriceForm
 {
+
     public static function configure(Schema $schema): Schema
     {
         return $schema

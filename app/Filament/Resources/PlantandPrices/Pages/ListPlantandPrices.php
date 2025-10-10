@@ -16,4 +16,8 @@ class ListPlantandPrices extends ListRecords
             CreateAction::make(),
         ];
     }
+    public function getTitle(): string
+    {
+        return 'Plans & pricing';
+    }
 }

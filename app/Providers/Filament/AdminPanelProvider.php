@@ -18,6 +18,7 @@ use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use Nagi\FilamentAbyssTheme\FilamentAbyssThemePlugin;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -52,6 +53,7 @@ class AdminPanelProvider extends PanelProvider
                 DisableBladeIconComponents::class,
                 DispatchServingFilamentEvent::class,
             ])
+            ->plugin(FilamentAbyssThemePlugin::make())
             ->authMiddleware([
                 Authenticate::class,
             ]);

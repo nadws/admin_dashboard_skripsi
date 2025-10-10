@@ -9,19 +9,31 @@ use App\Filament\Resources\PlantandPrices\Schemas\PlantandPriceForm;
 use App\Filament\Resources\PlantandPrices\Tables\PlantandPricesTable;
 use App\Models\PlantsPricing;
 use BackedEnum;
+use UnitEnum;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Table;
+use App\Filament\Resources\Enums\NavigationGroups;
 
 class PlantandPriceResource extends Resource
 {
     protected static ?string $model = PlantsPricing::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
 
-    protected static ?string $recordTitleAttribute = 'PlantsPricing';
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedClipboardDocumentCheck;
 
+    protected static string|UnitEnum|null $navigationGroup = NavigationGroups::Katalog;
+
+    protected static ?string $navigationLabel = 'Plans & Pricing';
+
+
+    protected static ?string $recordTitleAttribute = 'PlansPricing';
+
+    public static function getBreadcrumb(): string
+    {
+        return 'Plans & Prices';
+    }
     public static function form(Schema $schema): Schema
     {
         return PlantandPriceForm::configure($schema);
