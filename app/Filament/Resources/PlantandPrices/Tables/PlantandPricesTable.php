@@ -10,6 +10,8 @@ use Filament\Actions\EditAction;
 use Filament\Tables\Table;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
+use Filament\Tables\Filters\Filter;
+use Filament\Forms\Components\TextInput;
 
 class PlantandPricesTable
 {
@@ -22,13 +24,15 @@ class PlantandPricesTable
                 TextColumn::make('subname')->sortable(),
             ])
             ->filters([
-                SelectFilter::make('name')
-                    ->label('Nama')
-                    ->options(
-                        PlantsPricing::query()
-                            ->pluck('name', 'name') // 🟢 key dan value sama
-                            ->toArray()
-                    ),
+                Filter::make('name')
+                    ->form([
+                        TextInput::make('name')
+                            ->label('Cari Nama Paket'),
+                    ])
+                    ->query(function ($query, array $data) {
+                        return $query
+                            ->when($data['name'], fn($q, $value) => $q->where('name', 'like', "%{$value}%"));
+                    }),
             ])
             ->recordActions([
                 EditAction::make(),

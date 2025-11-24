@@ -14,4 +14,9 @@ class PlantsPricing extends Model
         'subname',
 
     ];
+
+    public function detailPlans()
+    {
+        return $this->hasMany(DetailPlans::class, 'plants_pricings_id');
+    }
 }
