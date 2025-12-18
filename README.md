@@ -1,26 +1,63 @@
-#Kalian bingung mau ngerjain skripsi gimana
-ini template yg tepat buat kalian untuk belajar bagaimana sih buat crud yang gampang banget
+# Admin Dashboard Skripsi (Laravel CRUD)
 
-sebelum itu follow dulu ya hehe
-<br>
-ig : https://www.instagram.com/nanda_wahyudiii/?igsh=MWQxMmtzN2c2NWdqbA%3D%3D#
-<br>
-trakteer : https://trakteer.id/uwais_tech
+Template ini dibuat untuk membantu mahasiswa yang sedang mengerjakan **skripsi** agar lebih mudah memahami dan mengimplementasikan **CRUD sederhana menggunakan Laravel**.
 
-Step 1 : clone project ini seperti biasa
-caranya buka repository kalian lalu salin ini :
+Cocok untuk:
 
-<code>
+-   Pembelajaran Laravel
+-   Referensi skripsi
+-   Project admin dashboard sederhana
+
+---
+
+## 📌 Tentang Project
+
+Project ini merupakan **Admin Dashboard berbasis Laravel** dengan fitur CRUD yang mudah dipahami, sehingga sangat cocok untuk pemula maupun mahasiswa.
+
+---
+
+## 🙌 Dukung Developer
+
+Jika project ini membantu kamu, jangan lupa dukung ya 😊
+
+-   **Instagram**: [@nanda_wahyudiii](https://www.instagram.com/nanda_wahyudiii/)
+-   **Trakteer**: [trakteer.id/uwais_tech](https://trakteer.id/uwais_tech)
+
+---
+
+## ⚙️ Instalasi & Menjalankan Project
+
+### 🔹 Step 1: Clone Repository
+
+Clone repository ini ke komputer kamu:
+
+```bash
 git clone https://github.com/nadws/admin_dashboard_skripsi.git
-</code>
-<br>
-Step 2 : jalankan di di terminal kalian 
-<code>
+```
+
+Masuk ke folder project:
+
+```bash
+cd admin_dashboard_skripsi
+```
+
+---
+
+### 🔹 Step 2: Install Dependency
+
+Jalankan perintah berikut di terminal:
+
+```bash
 composer install
-</code>
-<br>
-Step 3 : bikin file .env nya copy saja kode ini
-<code>
+```
+
+---
+
+### 🔹 Step 3: Konfigurasi Environment (.env)
+
+Buat file **.env** dengan cara copy dari `.env.example` atau langsung salin konfigurasi di bawah ini:
+
+```env
 APP_NAME=Laravel
 APP_ENV=local
 APP_KEY=base64:8SXnIE4Es99SeZB03rOlBpcfsRcT0ZiDlYx/kqg8A70=
@@ -32,9 +69,7 @@ APP_FALLBACK_LOCALE=en
 APP_FAKER_LOCALE=en_US
 
 APP_MAINTENANCE_DRIVER=file
-
 PHP_CLI_SERVER_WORKERS=4
-
 BCRYPT_ROUNDS=12
 
 LOG_CHANNEL=stack
@@ -45,7 +80,7 @@ LOG_LEVEL=debug
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE= <!-- sesuaikan database kalian ya-->
+DB_DATABASE=nama_database_kamu
 DB_USERNAME=root
 DB_PASSWORD=
 
@@ -58,7 +93,6 @@ SESSION_DOMAIN=null
 BROADCAST_CONNECTION=log
 FILESYSTEM_DISK=local
 QUEUE_CONNECTION=database
-
 CACHE_STORE=database
 
 MEMCACHED_HOST=127.0.0.1
@@ -84,16 +118,46 @@ AWS_BUCKET=
 AWS_USE_PATH_STYLE_ENDPOINT=false
 
 VITE_APP_NAME="${APP_NAME}"
-</code>
+```
 
-<br>
-Step 4 ketik ini di terminal ya
-<code>
+> ⚠️ **Pastikan DB_DATABASE disesuaikan dengan database kamu**
+
+---
+
+### 🔹 Step 4: Generate App Key
+
+Jalankan perintah berikut:
+
+```bash
 php artisan key:generate
-</code>
+```
 
-<br>
-step 5 jalankan programnya :
-<code>
+---
+
+### 🔹 Step 5: Jalankan Server
+
+```bash
 php artisan serve
-</code>
+```
+
+Akses aplikasi di browser:
+
+```
+http://localhost:8000
+```
+
+---
+
+## 📚 Catatan Tambahan
+
+-   Pastikan PHP, Composer, dan MySQL sudah terinstall
+-   Gunakan **Laravel versi yang sesuai** dengan project
+-   Cocok dijadikan bahan skripsi atau pembelajaran CRUD
+
+---
+
+## ⭐ Penutup
+
+Semoga project ini bermanfaat dan mempermudah pengerjaan skripsi kamu 🚀
+
+Jangan lupa ⭐ repository ini jika merasa terbantu 😊
