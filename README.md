@@ -156,6 +156,13 @@ http://localhost:8000
 
 ---
 
+## Akun Login
+
+-   Email : admin@gmail.com
+-   Password : password
+
+---
+
 ## 📚 Catatan Tambahan
 
 -   Pastikan PHP, Composer, dan MySQL sudah terinstall
