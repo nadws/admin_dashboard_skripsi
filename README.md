@@ -161,3 +161,7 @@ http://localhost:8000
 Semoga project ini bermanfaat dan mempermudah pengerjaan skripsi kamu 🚀
 
 Jangan lupa ⭐ repository ini jika merasa terbantu 😊
+
+## Eits kalo mau belajar CRUDNYA disini ya
+
+-   **Notion**: https://agate-oriole-2bc.notion.site/TEMPLATE-CRUD-FILAMENT-STEP-PRAKTIK-2cdd9f0ab2ad801b93a9da14806d972e?source=copy_link
