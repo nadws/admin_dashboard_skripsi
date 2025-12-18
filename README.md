@@ -19,7 +19,7 @@ Step 2 : jalankan di di terminal kalian
 composer install
 </code>
 <br>
-Step 3 : bikin file .env nya 
+Step 3 : bikin file .env nya copy saja kode ini
 <code>
 APP_NAME=Laravel
 APP_ENV=local
@@ -84,5 +84,16 @@ AWS_BUCKET=
 AWS_USE_PATH_STYLE_ENDPOINT=false
 
 VITE_APP_NAME="${APP_NAME}"
+</code>
 
+<br>
+Step 4 ketik ini di terminal ya
+<code>
+php artisan key:generate
+</code>
+
+<br>
+step 5 jalankan programnya :
+<code>
+php artisan serve
 </code>
