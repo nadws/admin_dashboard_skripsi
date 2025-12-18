@@ -165,9 +165,8 @@ http://localhost:8000
 
 ## 📚 Catatan Tambahan
 
--   Pastikan PHP, Composer, dan MySQL sudah terinstall
--   Gunakan **Laravel versi yang sesuai** dengan project
--   Cocok dijadikan bahan skripsi atau pembelajaran CRUD
+-   install laragon ya pilih yg 6.0 link download https://github.com/leokhoa/laragon/releases
+-   Cara install php 8.3 di laragon link https://qadrlabs.com/post/panduan-update-versi-php-di-laragon
 
 ---
 
