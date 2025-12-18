@@ -18,6 +18,7 @@ Step 2 : jalankan di di terminal kalian <br>
 <code>
 composer install
 </code>
+<br>
 Step 3 : bikin file .env nya <br>
 <code>
 APP_NAME=Laravel
