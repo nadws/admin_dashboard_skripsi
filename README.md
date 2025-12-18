@@ -132,6 +132,14 @@ Jalankan perintah berikut:
 php artisan key:generate
 ```
 
+```bash
+php artisan migrate
+```
+
+```bash
+php artisan db:seed
+```
+
 ---
 
 ### 🔹 Step 5: Jalankan Server
