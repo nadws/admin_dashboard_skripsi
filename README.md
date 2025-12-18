@@ -9,17 +9,17 @@ trakteer : https://trakteer.id/uwais_tech
 
 Step 1 : clone project ini seperti biasa
 caranya buka repository kalian lalu salin ini :
-<br>
+
 <code>
 git clone https://github.com/nadws/admin_dashboard_skripsi.git
 </code>
-
-Step 2 : jalankan di di terminal kalian <br>
+<br>
+Step 2 : jalankan di di terminal kalian 
 <code>
 composer install
 </code>
 <br>
-Step 3 : bikin file .env nya <br>
+Step 3 : bikin file .env nya 
 <code>
 APP_NAME=Laravel
 APP_ENV=local
